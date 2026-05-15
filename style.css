@@ -1,0 +1,155 @@
+*{
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+}
+
+body{
+    margin:0;
+    padding:35px;
+    background:#e4a8cb;
+    color:#7d94c6;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+.dashboard{
+    max-width:1200px;
+    margin:auto;
+}
+
+.top{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+}
+
+.card{
+    background:#e9eef3;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:
+        10px 10px 25px #c4699e,
+        -10px -10px 25px #da96c1;
+}
+
+.card h2{
+    margin-bottom:20px;
+    font-size:20px;
+    color:#d56bab;
+}
+
+label{
+    font-size:14px;
+    font-weight:600;
+}
+
+input,select,textarea{
+    width:100%;
+    margin:8px 0 16px;
+    padding:12px;
+    border-radius:12px;
+    border:none;
+    background:#c3e291;
+    box-shadow:
+        inset 4px 4px 8px #dce494,
+        inset -4px -4px 8px #a77b7b;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:80px;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    background:#e9eef3;
+    box-shadow:
+        6px 6px 15px #f367a4,
+        -6px -6px 15px #ed8686;
+    transition:0.3s;
+}
+
+.btn:hover{
+    box-shadow:
+        inset 4px 4px 10px #a2bede,
+        inset -4px -4px 10px #ffffff;
+}
+
+.actions{
+    display:flex;
+    gap:18px;
+    margin-bottom:22px;
+}
+
+.events{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:22px;
+}
+
+.event-card{
+    background:#e9eef3;
+    border-radius:18px;
+    padding:20px;
+    position:relative;
+    box-shadow:
+        8px 8px 18px #98b7db,
+        -8px -8px 18px #ffffff;
+}
+
+.event-card h3{
+    margin:0;
+    font-size:18px;
+}
+
+.date{
+    font-size:13px;
+    margin-top:6px;
+    color:#64748b;
+}
+
+.tag{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 14px;
+    border-radius:25px;
+    font-size:12px;
+    font-weight:600;
+    background:#c7d2fe;
+    color:#2d286b;
+}
+
+.event-card p{
+    margin-top:12px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.delete{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:28px;
+    height:28px;
+    border:none;
+    border-radius:50%;
+    background:#fee2e2;
+    color:#db4444;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:
+        3px 3px 6px #cdd3da,
+        -3px -3px 6px #ffffff;
+}
